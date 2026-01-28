@@ -1,11 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
-
-async function readFile(filePath: string): Promise<string> {
-  const fullPath = path.join(process.cwd(), filePath);
-  return fs.readFile(fullPath, "utf-8");
-}
+import profileData from "@/data/profile.json";
+import experienceData from "@/data/experience.json";
+import projectsData from "@/data/projects.json";
+import skillsData from "@/data/skills.json";
+import interestsData from "@/data/interests.json";
+import { systemPrompt } from "@/ai/system-prompt";
 
 export async function POST(request: NextRequest) {
   try {
@@ -26,15 +25,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const [profile, experience, projects, skills, interests, systemPrompt] =
-      await Promise.all([
-        readFile("data/profile.json"),
-        readFile("data/experience.json"),
-        readFile("data/projects.json"),
-        readFile("data/skills.json"),
-        readFile("data/interests.json"),
-        readFile("ai/system-prompt.md"),
-      ]);
+    // Import JSON files directly (they'll be bundled)
+    const profile = JSON.stringify(profileData);
+    const experience = JSON.stringify(experienceData);
+    const projects = JSON.stringify(projectsData);
+    const skills = JSON.stringify(skillsData);
+    const interests = JSON.stringify(interestsData);
 
     const knowledgeBase = `## Profile
 ${profile}
