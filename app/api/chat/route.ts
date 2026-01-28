@@ -75,6 +75,9 @@ ${interests}`;
       }),
     });
 
+    console.log("api key", apiKey);
+    console.log("response", response);
+
     if (!response.ok) {
       const error = await response.text();
       console.error("OpenAI API error:", error);
