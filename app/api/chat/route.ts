@@ -69,7 +69,7 @@ ${interests}`;
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "gpt-4.1-mini",
+        model: "gpt-4o-mini",
         messages: messages,
         temperature: 0.4,
       }),
