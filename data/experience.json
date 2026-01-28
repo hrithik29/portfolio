@@ -1,0 +1,155 @@
+[
+  {
+    "company": "NewMe",
+    "role": "Product Manager",
+    "duration": "Sep 2024 – Present",
+    "ownership_areas": [
+      "Growth and activation",
+      "Retention and lifecycle",
+      "Post-purchase and customer experience",
+      "Omnichannel and offline systems (POS, inventory)",
+      "CRM and experimentation"
+    ],
+    "key_contributions": [
+      "Owned end-to-end post-purchase journeys including delivery, returns, exchanges, and customer support",
+      "Implemented Kapture bot and ticketing system, increasing automated query resolution from ~20% to ~65%",
+      "Built and launched NEWME's first rewards program (Trend Coins)",
+      "Designed and shipped referral program driving incremental signups and orders",
+      "Led multiple A/B experiments across AOV, prepaid share, margins, and inventory liquidation",
+      "Prototyped POS UI and worked closely with engineering on offline rollout",
+      "Built end-to-end POS and inventory management system for offline stores"
+    ],
+    "impact": [
+      "Improved M3 retention by ~22% through rewards program",
+      "Increased signups by ~12% and daily orders by ~3% via referral program",
+      "Improved CSAT from ~2.5 to ~3.6 within one quarter",
+      "Reduced customer support agent load significantly via automation",
+      "Eliminated ~₹50L+ in annual recurring software costs",
+      "Improved store margins by ~3 percentage points"
+    ]
+  },
+  {
+    "company": "Spinny",
+    "role": "Associate Product Manager",
+    "duration": "Aug 2023 – Aug 2024",
+    "ownership_areas": [
+      "Retention and lifecycle initiatives",
+      "Dealer experience and onboarding",
+      "Pricing and negotiation workflows",
+      "WhatsApp and chatbot experiences",
+      "Supply-side operational flows"
+    ],
+    "key_contributions": [
+      "Designed and shipped price negotiation workflow for car buyers and dealers",
+      "Led retention initiatives across WhatsApp and chatbot journeys",
+      "Rebranded Spinny Auctions to Spinny Partners and improved dealer onboarding flows",
+      "Built standardized 1–5 rating system for dealer car quality",
+      "Worked on interstate delivery optimization flows to reduce dealer back-outs",
+      "Collaborated closely with operations and business teams on supply-side improvements"
+    ],
+    "impact": [
+      "Increased price negotiation requests by ~15% and acceptance rate by ~7%",
+      "Saved ~₹10L per month through retention-led initiatives",
+      "Improved WhatsApp chatbot CTR by ~10%",
+      "Improved dealer onboarding completion by ~12%",
+      "Reduced dealer back-outs by ~5%"
+    ]
+  },
+  {
+    "company": "Anarock",
+    "role": "Associate Product Manager",
+    "duration": "Jun 2022 – Aug 2023",
+    "ownership_areas": [
+      "B2B CRM product enhancements",
+      "Internal tools and workflows",
+      "Invoicing and finance systems",
+      "Reimbursement and expense management",
+      "Cross-functional coordination with sales and finance teams"
+    ],
+    "key_contributions": [
+      "Shipped multiple CRM enhancements for enterprise real estate clients",
+      "Owned roadmap and execution for an internal invoicing module",
+      "Led a pod of engineers and designers to deliver invoicing workflows",
+      "Built and improved reimbursement and expense management portal",
+      "Worked closely with finance and ops teams to streamline internal processes"
+    ],
+    "impact": [
+      "Onboarded ~8 enterprise clients through CRM enhancements",
+      "Added ~₹4L ARR through CRM-related improvements",
+      "Enabled handling of ~₹50L per month through reimbursement workflows",
+      "Improved internal efficiency and reduced manual finance operations"
+    ]
+  },
+  {
+    "company": "Jupiter",
+    "role": "Product Management Intern",
+    "duration": "Jan 2022 – Jun 2022",
+    "ownership_areas": [
+      "Rewards and loyalty systems",
+      "Payments-related workflows",
+      "Analytics and experimentation",
+      "Customer support and CX improvements"
+    ],
+    "key_contributions": [
+      "Analyzed reward abuse patterns and designed fixes to prevent misuse",
+      "Ran experiments to improve rewards experience and reduce fraud",
+      "Built automated reward reversal workflows with payments team",
+      "Worked on customer support flows related to rewards and payments",
+      "Collaborated closely with data and engineering teams on experimentation"
+    ],
+    "impact": [
+      "Reduced reward abuse by ~80%",
+      "Saved ~₹16L through analytics-led interventions",
+      "Improved CSAT by ~15%",
+      "Reduced reward-related support queries by ~20%"
+    ]
+  },
+  {
+    "company": "PharmEasy",
+    "role": "Business Analyst Intern",
+    "duration": "Feb 2021 – Jun 2021",
+    "ownership_areas": [
+      "Marketplace monetization",
+      "Brand ranking and visibility",
+      "Revenue optimization",
+      "Analytics and reporting",
+      "SQL-based analysis"
+    ],
+    "key_contributions": [
+      "Worked on optimizing upfront payments from brands for premium banner placements",
+      "Defined goal and framework to rank OTC brands for top placement based on business impact",
+      "Classified OTC product brands using a scoring model built on 10 metrics including GMV and margin",
+      "Analyzed ROI of banner placements by comparing pre- and post-15-day performance",
+      "Used SQL to track changes across metrics such as search trends and orders"
+    ],
+    "impact": [
+      "Identified ranking logic that directly influenced brand visibility and revenue",
+      "Demonstrated ~10% increase in revenue for brands displayed via optimized banner placements",
+      "Helped improve decision-making for brand prioritization using data-driven scoring"
+    ]
+  },
+  {
+    "company": "HackerRank",
+    "role": "Product Analyst Intern",
+    "duration": "Jan 2022 – Jun 2022",
+    "ownership_areas": [
+      "Product analytics",
+      "Dashboarding and reporting",
+      "Cohort analysis",
+      "Adoption and engagement metrics",
+      "Experimentation support"
+    ],
+    "key_contributions": [
+      "Partnered closely with product managers to support analytics and decision-making",
+      "Designed and built a Looker dashboard to track behavior of returning mobile interviewers",
+      "Analyzed user engagement and adoption trends across interviewer roles",
+      "Conducted cohort analysis to identify drop-offs in role adoption",
+      "Provided insights that helped improve interviewer experience and product usage"
+    ],
+    "impact": [
+      "Enabled data-driven decisions for the product team through self-serve dashboards",
+      "Identified key adoption drop-offs leading to UX and product improvements",
+      "Earned a full-time analyst role offer based on performance"
+    ]
+  }
+]

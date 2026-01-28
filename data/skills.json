@@ -1,0 +1,31 @@
+{
+  "product": [
+    "Product discovery",
+    "PRD writing and requirement definition",
+    "A/B experimentation",
+    "Growth and retention strategy",
+    "Customer experience design",
+    "Stakeholder management"
+  ],
+  "analytics": [
+    "SQL",
+    "Cohort analysis",
+    "Funnel analysis",
+    "Experiment analysis",
+    "Metrics definition"
+  ],
+  "tools": [
+    "Amplitude",
+    "WebEngage",
+    "Clevertap",
+    "Metabase",
+    "Looker",
+    "JIRA"
+  ],
+  "collaboration": [
+    "Cross-functional leadership",
+    "Working with design and engineering teams",
+    "Working with operations teams",
+    "Store team training and enablement"
+  ]
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "rewards_program",
+    "title": "Rewards Program (Trend Coins)",
+    "company": "NewMe",
+    "problem": "Low retention and weak repeat purchase behavior among Gen-Z users, with discount dependence and limited engagement between orders.",
+    "goals": [
+      "Increase repeat purchases",
+      "Boost prepaid adoption to reduce returns",
+      "Lift conversion and average order value by creating engaging, playful incentives"
+    ],
+    "my_role": "Led research, design, benchmarking, and product definition for the Trend Coins loyalty ecosystem; partnered with design and engineering to scope and iterate product flows.",
+    "key_decisions": [
+      "Unified a single currency (Trend Coins) to simplify reward earning and redemption across touchpoints",
+      "Surface reward opportunities at checkout and other decision points to make rewards tangible",
+      "Design brand-aligned, playful identity for trend coins to resonate with Gen-Z users"
+    ],
+    "execution": [
+      "Conducted research to benchmark competitor loyalty programs and understand Gen-Z motivators",
+      "Iterated multiple design concepts (gamified flows, progress nudges, visibility across UI)",
+      "Implemented coin visibility in navigation, checkout, profile, and success screens"
+    ],
+    "metrics": [
+      "Improved retention by creating gamified reward touchpoints",
+      "Positive shifts in prepaid adoption via visible reward incentives",
+      "Increased conversion and AOV by making rewards part of checkout decisions"
+    ],
+    "impact": "Trend Coins transformed discount-driven transactions into a loyalty engine that improved retention, engagement, and prepaid adoption.",
+    "learnings": [
+      "Simplicity and visibility matter more than overly complex tier systems",
+      "Rewards must be playful and integrated directly into key decision flows",
+      "Brand-aligned identity enhances emotional connection and long-term engagement"
+    ]
+  },
+  {
+    "id": "referral_program",
+    "title": "Referral Program for New User Acquisition",
+    "company": "NewMe",
+    "problem": "High customer acquisition costs and limited organic growth channels, with a need to acquire high-intent users efficiently.",
+    "goals": [
+      "Reduce customer acquisition cost",
+      "Drive incremental new user acquisition",
+      "Leverage existing users as a growth channel"
+    ],
+    "my_role": "Owned the end-to-end referral program including incentive design, eligibility rules, flow definition, and collaboration with design and engineering teams.",
+    "key_decisions": [
+      "Reward both referrer and referee to maximize participation",
+      "Offer cash incentive to referrer and discount to referee to balance motivation and cost",
+      "Trigger rewards only after successful first order to ensure user quality"
+    ],
+    "execution": [
+      "Designed referral flows across app entry points and post-purchase moments",
+      "Defined reward logic, eligibility rules, and success conditions",
+      "Worked with engineering to implement referral tracking and reward fulfillment",
+      "Monitored performance and iterated on incentives to balance cost and quality"
+    ],
+    "metrics": [
+      "Incremental new users acquired through referrals",
+      "Improved acquisition efficiency compared to paid channels",
+      "Healthy first-order conversion from referred users"
+    ],
+    "impact": "The referral program became a scalable acquisition lever, driving incremental new users while helping reduce overall acquisition costs.",
+    "learnings": [
+      "Rewarding both sides significantly improves participation rates",
+      "Tying rewards to first successful orders improves user quality",
+      "Simple, transparent incentives outperform complex referral mechanics"
+    ]
+  },
+  {
+    "id": "pos_inventory_system",
+    "title": "POS and Inventory Management System",
+    "company": "NewMe",
+    "problem": "Dependence on third-party systems created operational bottlenecks, high costs, and limited visibility into inventory across offline stores and the organization.",
+    "goals": [
+      "Eliminate third-party billing and inventory dependencies",
+      "Improve billing speed and accuracy at stores",
+      "Enable real-time inventory visibility across the organization",
+      "Support scalable offline retail expansion"
+    ],
+    "my_role": "Owned the project end-to-end, from conceptualization and user research to PRD creation, prioritization, execution, and training store teams on the new system.",
+    "key_decisions": [
+      "Build an in-house POS and inventory system to remove third-party constraints",
+      "Design workflows optimized for store staff with minimal operational friction",
+      "Prioritize billing accuracy and inventory consistency over feature breadth in v1"
+    ],
+    "execution": [
+      "Conducted user research with store teams to identify pain points and workflow gaps",
+      "Defined end-to-end requirements for billing, inventory updates, returns, and exchanges",
+      "Worked closely with engineering to build an enterprise-grade POS system",
+      "Led store onboarding and training to ensure smooth adoption"
+    ],
+    "metrics": [
+      "Billing speed and error rate",
+      "Inventory accuracy across stores",
+      "Operational efficiency for store teams"
+    ],
+    "impact": "Delivered a highly reliable POS and inventory system that enabled smooth offline operations, reduced errors, eliminated third-party costs, and significantly improved inventory visibility across the organization.",
+    "learnings": [
+      "Operational products require deep empathy for frontline users",
+      "Simplicity and reliability matter more than feature richness in high-stakes systems",
+      "Strong change management is critical when replacing core operational tools"
+    ]
+  },
+  {
+    "id": "post_purchase_support",
+    "title": "Post-Purchase Experience & Customer Support Bot",
+    "company": "NewMe",
+    "problem": "Post-purchase journeys (delivery, returns) had friction and limited visibility, leading to lower NPS and high support load on customer service agents.",
+    "goals": [
+      "Improve post-delivery and returns NPS",
+      "Enhance overall customer experience after purchase",
+      "Reduce support ticket volume through better self-serve and bot interactions"
+    ],
+    "my_role": "Led improvements across post-purchase UX flows and customer support automation, working across product, design, engineering, and support operations.",
+    "key_decisions": [
+      "Identify and remove bottlenecks in delivery and returns user journeys",
+      "Integrate an external customer support platform to improve automation",
+      "Prioritize bot workflows that resolve common queries without human intervention"
+    ],
+    "execution": [
+      "Mapped end-to-end post-purchase user journeys to identify friction points",
+      "Improved UX and UI across delivery tracking and returns flows",
+      "Integrated external customer support platform",
+      "Designed workflows and automation rules to improve bot interactions"
+    ],
+    "metrics": [
+      "Customer support CSAT",
+      "NPS for post-delivery and returns surveys",
+      "Number of tickets handled by agents"
+    ],
+    "impact": "Improved overall CSAT and post-purchase NPS while reducing the number of tickets handled by support agents through better UX and automation.",
+    "learnings": [
+      "Small friction points in post-purchase flows significantly impact overall perception of the brand",
+      "Well-designed bot automation can improve both customer experience and operational efficiency",
+      "CX improvements require tight alignment between product and support teams"
+    ]
+  }
+]
