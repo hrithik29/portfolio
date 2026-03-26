@@ -1,9 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import profileData from "@/data/profile.json";
-import experienceData from "@/data/experience.json";
-import projectsData from "@/data/projects.json";
-import skillsData from "@/data/skills.json";
-import interestsData from "@/data/interests.json";
+import contextData from "@/data/hrithik_context.json";
 import { systemPrompt } from "@/ai/system-prompt";
 
 export async function POST(request: NextRequest) {
@@ -25,32 +21,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Import JSON files directly (they'll be bundled)
-    const profile = JSON.stringify(profileData);
-    const experience = JSON.stringify(experienceData);
-    const projects = JSON.stringify(projectsData);
-    const skills = JSON.stringify(skillsData);
-    const interests = JSON.stringify(interestsData);
-
-    const knowledgeBase = `## Profile
-${profile}
-
-## Experience
-${experience}
-
-## Projects
-${projects}
-
-## Skills
-${skills}
-
-## Interests
-${interests}`;
+    const knowledgeBase = JSON.stringify(contextData);
 
     const messages = [
       {
         role: "system",
-        content: systemPrompt + "\n\nKnowledge Base:\n" + knowledgeBase,
+        content: systemPrompt,
+      },
+      {
+        role: "system",
+        content:
+          "Answer in concise bullet points. Avoid long paragraphs unless asked.",
+      },
+      {
+        role: "system",
+        content: `Knowledge Base:\n${knowledgeBase}`,
       },
       {
         role: "user",
@@ -65,18 +50,17 @@ ${interests}`;
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "gpt-4o-mini",
-        messages: messages,
-        temperature: 0.4,
+        model: "gpt-4.1-mini", // updated
+        messages,
+        temperature: 0.3,
+        max_tokens: 500,
       }),
     });
-
-    console.log("api key", apiKey);
-    console.log("response", response);
 
     if (!response.ok) {
       const error = await response.text();
       console.error("OpenAI API error:", error);
+
       return NextResponse.json(
         { error: "Failed to get response from AI" },
         { status: 500 }
@@ -84,11 +68,15 @@ ${interests}`;
     }
 
     const data = await response.json();
-    const reply = data.choices[0]?.message?.content || "No response generated";
+
+    const reply =
+      data.choices?.[0]?.message?.content?.trim() ||
+      "Sorry, I couldn’t generate a response right now.";
 
     return NextResponse.json({ reply });
   } catch (error) {
     console.error("Chat API error:", error);
+
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 }
