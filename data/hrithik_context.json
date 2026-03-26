@@ -1,0 +1,248 @@
+{
+  "profile": {
+    "name": "Hrithik Jain",
+    "headline": "Product Manager with ~4 years of experience across B2B and B2C, building high-impact growth, retention, and customer experience products.",
+    "current_role": "Product Manager",
+    "experience_years": 4,
+    "summary": "I am a product manager with experience across consumer and B2B products, focused on growth, retention, and customer experience. I enjoy working closely with design, engineering, and data teams to ship impactful products."
+  },
+
+  "persona": {
+    "working_style": [
+      "Data-driven and experiment-first approach",
+      "Prefers end-to-end ownership of problem statements",
+      "Balances user experience with business impact",
+      "Moves fast with iterative shipping"
+    ],
+    "decision_making": [
+      "Prioritize based on impact on revenue, retention, or efficiency",
+      "Validate ideas through experiments before scaling",
+      "Use funnel and cohort analysis to identify drop-offs",
+      "Focus on reducing friction across user journeys"
+    ],
+    "strengths": [
+      "Growth systems and referral loops",
+      "Retention and lifecycle design",
+      "A/B experimentation",
+      "Workflow automation and CX improvements",
+      "Cross-functional execution"
+    ]
+  },
+
+  "experience": [
+    {
+      "company": "NewMe",
+      "role": "Product Manager",
+      "duration": "Sep 2024 – Present",
+      "ownership_areas": [
+        "Growth and activation",
+        "Retention and lifecycle",
+        "Post-purchase and customer experience",
+        "Omnichannel and offline systems (POS, inventory)",
+        "CRM and experimentation"
+      ],
+      "key_contributions": [
+        "Owned end-to-end post-purchase journeys including delivery, returns, exchanges, and customer support",
+        "Implemented Kapture bot and ticketing system, increasing automated query resolution from ~20% to ~65%",
+        "Built and launched rewards program (Trend Coins)",
+        "Designed and shipped referral program driving incremental signups and orders",
+        "Led multiple A/B experiments across AOV, prepaid share, margins, and inventory liquidation",
+        "Prototyped POS UI and worked closely with engineering on offline rollout",
+        "Built end-to-end POS and inventory management system for offline stores"
+      ],
+      "impact": [
+        "Improved M3 retention by ~22%",
+        "Increased signups by ~12% and daily orders by ~3%",
+        "Improved CSAT from ~2.5 to ~3.6",
+        "Reduced customer support load via automation",
+        "Eliminated ~₹50L+ annual costs",
+        "Improved store margins by ~3%"
+      ]
+    },
+    {
+      "company": "Spinny",
+      "role": "Associate Product Manager",
+      "duration": "Aug 2023 – Aug 2024",
+      "ownership_areas": [
+        "Retention and lifecycle",
+        "Dealer experience and onboarding",
+        "Pricing and negotiation workflows",
+        "WhatsApp and chatbot journeys",
+        "Supply-side operations"
+      ],
+      "key_contributions": [
+        "Designed price negotiation workflow improving engagement and acceptance",
+        "Led retention initiatives across WhatsApp and chatbot flows",
+        "Worked on Spinny Partners onboarding experience",
+        "Built standardized car rating system",
+        "Optimized interstate delivery flows"
+      ],
+      "impact": [
+        "+15% price requests, +7% acceptance",
+        "₹10L/month savings",
+        "+10% CTR",
+        "+12% onboarding",
+        "-5% dealer back-outs"
+      ]
+    },
+    {
+      "company": "Anarock",
+      "role": "Associate Product Manager",
+      "duration": "Jun 2022 – Aug 2023",
+      "ownership_areas": [
+        "B2B CRM enhancements",
+        "Internal tools",
+        "Finance and invoicing systems"
+      ],
+      "key_contributions": [
+        "Shipped CRM improvements for enterprise clients",
+        "Led invoicing module roadmap and execution",
+        "Improved reimbursement and expense workflows"
+      ],
+      "impact": [
+        "8 clients onboarded",
+        "₹4L ARR added",
+        "₹50L/month handled via workflows"
+      ]
+    },
+    {
+      "company": "Jupiter",
+      "role": "Product Management Intern",
+      "duration": "Jan 2022 – Jun 2022",
+      "key_contributions": [
+        "Reduced reward abuse using analytics",
+        "Built reward reversal workflows",
+        "Improved rewards CX"
+      ],
+      "impact": [
+        "-80% reward abuse",
+        "₹16L saved",
+        "+15% CSAT"
+      ]
+    },
+    {
+      "company": "PharmEasy",
+      "role": "Business Analyst Intern",
+      "duration": "Feb 2021 – Jun 2021",
+      "key_contributions": [
+        "Built brand ranking logic for OTC marketplace",
+        "Analyzed ROI of banner placements",
+        "Worked with SQL on marketplace data"
+      ],
+      "impact": [
+        "+10% revenue uplift from optimized placements"
+      ]
+    },
+    {
+      "company": "HackerRank",
+      "role": "Product Analyst Intern",
+      "duration": "Jan 2022 – Jun 2022",
+      "key_contributions": [
+        "Built Looker dashboards",
+        "Performed cohort analysis",
+        "Identified adoption drop-offs"
+      ],
+      "impact": [
+        "Improved product decisions via analytics",
+        "Received full-time offer"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "rewards_program",
+      "title": "Rewards Program (Trend Coins)",
+      "company": "NewMe",
+      "problem": "Low retention and weak repeat purchase behavior",
+      "solution": "Built a unified reward currency integrated across user lifecycle",
+      "impact": "Improved retention, engagement, prepaid adoption, and conversion",
+      "learnings": [
+        "Simplicity > complexity",
+        "Visibility drives usage",
+        "Emotional design improves engagement"
+      ]
+    },
+    {
+      "id": "referral_program",
+      "title": "Referral Program",
+      "company": "NewMe",
+      "problem": "High CAC and limited organic growth",
+      "solution": "Built referral loops rewarding both referrer and referee",
+      "impact": "+12% signups, +3% orders",
+      "learnings": [
+        "Incentivize both sides",
+        "Tie rewards to first order",
+        "Keep mechanics simple"
+      ]
+    },
+    {
+      "id": "pos_inventory_system",
+      "title": "POS & Inventory System",
+      "company": "NewMe",
+      "problem": "High cost and inefficiencies from third-party tools",
+      "solution": "Built in-house POS and inventory system",
+      "impact": "₹50L+ cost savings, improved store efficiency",
+      "learnings": [
+        "Operational tools need simplicity",
+        "User empathy is critical",
+        "Change management is key"
+      ]
+    },
+    {
+      "id": "post_purchase_support",
+      "title": "Post-Purchase CX & Support Automation",
+      "company": "NewMe",
+      "problem": "Poor post-purchase experience and high support load",
+      "solution": "Improved UX + implemented bot automation",
+      "impact": "Higher CSAT, reduced support load",
+      "learnings": [
+        "Post-purchase defines brand perception",
+        "Automation improves both CX and cost",
+        "Tight alignment with support teams is critical"
+      ]
+    }
+  ],
+
+  "skills": {
+    "product": [
+      "Product discovery",
+      "PRD writing",
+      "A/B experimentation",
+      "Growth strategy",
+      "Retention systems",
+      "Customer experience design",
+      "Stakeholder management"
+    ],
+    "analytics": [
+      "SQL",
+      "Cohort analysis",
+      "Funnel analysis",
+      "Experiment analysis",
+      "Metrics definition"
+    ],
+    "tools": [
+      "Amplitude",
+      "WebEngage",
+      "Clevertap",
+      "Metabase",
+      "Looker",
+      "JIRA"
+    ],
+    "collaboration": [
+      "Cross-functional leadership",
+      "Design and engineering collaboration",
+      "Operations collaboration",
+      "Store team enablement"
+    ]
+  },
+
+  "interests": {
+    "personal": [
+      "Exploring food and street cuisines",
+      "Cricket and following players like Virat Kohli",
+      "Crime thrillers and novels",
+      "Learning about startups and scaling businesses"
+    ]
+  }
+}
