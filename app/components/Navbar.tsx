@@ -6,9 +6,10 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/ask-me", label: "Ask My AI" },
+  { href: "/resume", label: "Resume" },
   { href: "/work", label: "Work" },
-  { href: "/skills", label: "Skills" },
-  { href: "/ask-me", label: "Ask Me" },
+  { href: "/journey", label: "My Journey So Far" },
 ];
 
 export default function Navbar() {
@@ -17,41 +18,33 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-neutral-800 border-b border-neutral-600">
-      <div className="max-w-4xl mx-auto px-5 h-full flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-white font-semibold text-lg">
+        <Link href="/" className="text-white font-semibold text-lg shrink-0">
           Hrithik Jain
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <nav className="flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={
                 pathname === link.href
-                  ? "text-white text-sm font-medium"
-                  : "text-neutral-400 text-sm font-medium hover:text-white"
+                  ? "text-white text-sm font-medium whitespace-nowrap"
+                  : "text-neutral-400 text-sm font-medium hover:text-white whitespace-nowrap"
               }
             >
               {link.label}
             </Link>
           ))}
-          <a
-            href="/Hrithik_Jain_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 text-sm font-medium hover:text-white"
-          >
-            Resume
-          </a>
-        </div>
+        </nav>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile Hamburger - hidden on desktop */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex md:hidden p-2 text-white"
+          className="p-2 text-white md:hidden"
           aria-label="Menu"
         >
           {isOpen ? (
@@ -83,15 +76,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="/Hrithik_Jain_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-            className="block py-3 text-neutral-300 text-base font-medium hover:text-white"
-          >
-            Resume
-          </a>
         </div>
       )}
     </header>
