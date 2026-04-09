@@ -209,35 +209,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Strip */}
-      <section className="relative z-10 py-20 sm:py-24 px-6">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="relative rounded-3xl bg-gradient-to-r from-blue-900/30 via-purple-900/30 to-blue-900/30 border border-white/10 p-10 sm:p-14 text-center overflow-hidden"
-          >
-            {/* Background Glow */}
-            <div className="absolute inset-0 bg-gradient-radial from-purple-600/10 via-transparent to-transparent pointer-events-none" />
-
-            <h3 className="relative text-xl sm:text-2xl font-semibold text-white mb-6">
-              Want to know how I think about product?
-            </h3>
-            <Link href="/ask-me">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="relative px-7 py-3.5 rounded-full bg-white text-gray-900 font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Start the Conversation
-              </motion.button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Spacer before footer */}
       <div className="h-8" />
     </div>
