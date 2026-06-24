@@ -146,7 +146,7 @@ export default function Home() {
               </motion.button>
             </Link>
             <motion.a
-              href="/Hrithik_Jain_Resume.pdf"
+              href="/hrithik_res.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
