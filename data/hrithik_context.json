@@ -6,7 +6,6 @@
     "experience_years": 4,
     "summary": "I'm a consumer-facing growth PM who has owned the full funnel — from new user activation and conversion, through rewards and referrals, to post-purchase experience and operational infrastructure. At NewMe I wore three distinct product hats: growth, customer experience, and omnichannel platform. Before that, I worked on lifecycle and dealer products at Spinny and B2B CRM tooling at Anarock. My background is in data and analytics, which shapes how I discover problems, design experiments, and measure success. I build AI-powered workflows into my own process and think natively about how AI can be embedded into products."
   },
-
   "persona": {
     "working_style": [
       "Go to the source — I visit stores, talk to ops teams, and shadow support before writing requirements",
@@ -31,7 +30,6 @@
     "superpower": "Defaulting to the source of truth over secondhand requirements. My best decisions — like building the POS system — started with store visits before a single line of spec was written.",
     "growth_area": "Moving from tactical AI usage (automating my own workflows) to AI-native product design — embedding AI into the core experience, not as a feature but as the default interaction layer."
   },
-
   "experience": [
     {
       "company": "NewMe",
@@ -182,7 +180,11 @@
         "Built reward reversal workflows",
         "Improved rewards CX"
       ],
-      "impact": ["-80% reward abuse", "₹16L saved", "+15% CSAT"]
+      "impact": [
+        "-80% reward abuse",
+        "₹16L saved",
+        "+15% CSAT"
+      ]
     },
     {
       "company": "PharmEasy",
@@ -194,17 +196,21 @@
         "Analysed ROI of banner placements using SQL",
         "Optimised placement strategy"
       ],
-      "impact": ["+10% revenue uplift from optimised placements"]
+      "impact": [
+        "+10% revenue uplift from optimised placements"
+      ]
     },
     {
       "company": "HackerRank",
       "role": "Product Analyst Intern",
       "duration": "Jun 2021 – Aug 2021",
       "context": "Built Looker dashboards and ran cohort analysis to identify adoption drop-offs.",
-      "impact": ["Improved product decisions via analytics", "Received full-time offer"]
+      "impact": [
+        "Improved product decisions via analytics",
+        "Received full-time offer"
+      ]
     }
   ],
-
   "projects": [
     {
       "id": "day0_offer_strategy",
@@ -217,7 +223,11 @@
         "overall_new_user_conversion_lift": "~5%",
         "cm_impact": "Protected via MOV floors"
       },
-      "learnings": ["Urgency outperforms discount depth", "Cohort-level personalisation matters more than blanket offers", "Always pair conversion experiments with margin guardrails"]
+      "learnings": [
+        "Urgency outperforms discount depth",
+        "Cohort-level personalisation matters more than blanket offers",
+        "Always pair conversion experiments with margin guardrails"
+      ]
     },
     {
       "id": "rewards_program",
@@ -230,9 +240,16 @@
         "blended_period_uplift": "22% (includes seasonal and campaign effects — not attributable to rewards alone)",
         "key_distinction": "The 8% is the number to cite — it is causally isolated. The 22% is a blended metric."
       },
-      "leading_indicators": ["Rewards tab views", "Coin enrollment rate"],
+      "leading_indicators": [
+        "Rewards tab views",
+        "Coin enrollment rate"
+      ],
       "lagging_outcome": "M3 retention rate",
-      "learnings": ["Non-transactional earning drives habit, not just purchase", "Visibility of coin balance directly drives engagement", "Always isolate program impact via A/B — blended metrics mislead"]
+      "learnings": [
+        "Non-transactional earning drives habit, not just purchase",
+        "Visibility of coin balance directly drives engagement",
+        "Always isolate program impact via A/B — blended metrics mislead"
+      ]
     },
     {
       "id": "referral_program",
@@ -245,7 +262,11 @@
         "daily_order_lift": "+3%",
         "cm_impact": "Positive CM2 after referral reward cost"
       },
-      "learnings": ["Tie rewards to meaningful activation (first order), not vanity events (signup)", "Incentivise both sides equally", "Simplicity drives sharing behaviour"]
+      "learnings": [
+        "Tie rewards to meaningful activation (first order), not vanity events (signup)",
+        "Incentivise both sides equally",
+        "Simplicity drives sharing behaviour"
+      ]
     },
     {
       "id": "pos_inventory_system",
@@ -259,7 +280,11 @@
         "planning_efficiency": "+30%+",
         "store_margin_improvement": "~3%"
       },
-      "learnings": ["Go to the source — store visits revealed requirements no stakeholder had articulated", "Operational tools need radical simplicity — users are not product-savvy", "Change management is as important as the product itself for offline rollouts"]
+      "learnings": [
+        "Go to the source — store visits revealed requirements no stakeholder had articulated",
+        "Operational tools need radical simplicity — users are not product-savvy",
+        "Change management is as important as the product itself for offline rollouts"
+      ]
     },
     {
       "id": "support_automation",
@@ -273,10 +298,13 @@
         "return_csat": "1.0 → 3.0"
       },
       "stakeholder_conflict": "Support ops pushed for maximum automation. Risk ops flagged blanket return abuse risk. Resolution: introduced risk-profile layer that automated for low-risk users while keeping human review for flagged profiles. Both teams aligned once they saw the backtesting data.",
-      "learnings": ["Risk-profiling unlocks automation at scale without abuse exposure", "Post-purchase experience has outsized impact on brand perception and repeat purchase", "Ops alignment is a prerequisite — ship only once support and risk teams are co-owners"]
+      "learnings": [
+        "Risk-profiling unlocks automation at scale without abuse exposure",
+        "Post-purchase experience has outsized impact on brand perception and repeat purchase",
+        "Ops alignment is a prerequisite — ship only once support and risk teams are co-owners"
+      ]
     }
   ],
-
   "skills": {
     "product": [
       "Product discovery (user interviews, store visits, ops shadowing)",
@@ -315,12 +343,11 @@
       "Vendor and integration management"
     ]
   },
-
   "job_search": {
     "status": "Actively interviewing — immediate joiner",
     "positioning": "Consumer-facing growth PM with 0→1 platform experience and AI-native product thinking",
     "target_roles": "Product Manager / Senior PM — growth, retention, CX, or platform products in consumer startups",
-    "companies_interviewing": ["Technosport", "Porter", "GobbleCube AI", "Rupeek"],
+    "companies_interviewing": "Actively interviewing at multiple companies across consumer, growth, and platform product roles — reach out to Hrithik directly for details.",
     "key_differentiators": [
       "Rare combination of consumer growth PM + operational platform builder (POS, inventory, support infra)",
       "Experiment-first with rigorous causal attribution — not just reporting metrics but isolating them",
@@ -328,7 +355,6 @@
       "Immediate joiner with full context on current consumer market dynamics"
     ]
   },
-
   "interests": {
     "personal": [
       "Exploring food and street cuisines",
@@ -338,7 +364,6 @@
       "Following startup ecosystems and D2C brands in India"
     ]
   },
-
   "faq": {
     "why_leave_newme": "NewMe scaled into offline retail, which made the product surface more operational. I want to go deeper on consumer growth and AI-native product problems — that's where my energy is and where I think I have the most to contribute.",
     "biggest_achievement": "Building the POS system from zero — not because it was technically hard, but because I started with store visits, not specs. That discovery-first approach is what made it actually work in practice.",
