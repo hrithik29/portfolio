@@ -58,10 +58,7 @@ async function askPortfolioBot(question) {
     const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        messages: [{ role: "user", content: question }],
-      }),
-      timeout: 30000,
+      body: JSON.stringify({ message: question }), // matches route.ts: { message }
     });
 
     if (!res.ok) {
@@ -69,20 +66,7 @@ async function askPortfolioBot(question) {
     }
 
     const data = await res.json();
-
-    // Handle different response shapes your API might return
-    if (typeof data === "string") return data;
-    if (data.content) return data.content;
-    if (data.message) return data.message;
-    if (data.response) return data.response;
-    if (data.text) return data.text;
-
-    // Try to extract from Anthropic-style response
-    if (data.content && Array.isArray(data.content)) {
-      return data.content.map((b) => b.text || "").join("");
-    }
-
-    return JSON.stringify(data);
+    return data.reply || JSON.stringify(data); // matches route.ts: { reply }
   } catch (err) {
     return `ERROR: ${err.message}`;
   }
