@@ -1,225 +1,300 @@
 {
   "profile": {
     "name": "Hrithik Jain",
-    "headline": "Product Manager with ~4 years of experience across B2B and B2C, building high-impact growth, retention, and customer experience products.",
-    "current_role": "Product Manager",
+    "headline": "Product Manager with ~4 years of experience across B2C and B2B, specialising in growth, retention, and customer experience. Known for 0→1 builds, data-driven experimentation, and AI-native product thinking.",
+    "current_role": "Product Manager (open to new roles — immediate joiner)",
     "experience_years": 4,
-    "summary": "I am a product manager with experience across consumer and B2B products, focused on growth, retention, and customer experience. I enjoy working closely with design, engineering, and data teams to ship impactful products."
+    "summary": "I'm a consumer-facing growth PM who has owned the full funnel — from new user activation and conversion, through rewards and referrals, to post-purchase experience and operational infrastructure. At NewMe I wore three distinct product hats: growth, customer experience, and omnichannel platform. Before that, I worked on lifecycle and dealer products at Spinny and B2B CRM tooling at Anarock. My background is in data and analytics, which shapes how I discover problems, design experiments, and measure success. I build AI-powered workflows into my own process and think natively about how AI can be embedded into products."
   },
 
   "persona": {
     "working_style": [
-      "Data-driven and experiment-first approach",
-      "Prefers end-to-end ownership of problem statements",
-      "Balances user experience with business impact",
-      "Moves fast with iterative shipping"
+      "Go to the source — I visit stores, talk to ops teams, and shadow support before writing requirements",
+      "Experiment-first: define a hypothesis, isolate the variable, A/B test before scaling",
+      "End-to-end ownership from discovery through rollout and post-launch iteration",
+      "Move fast with lightweight MVPs, then iterate based on data"
     ],
     "decision_making": [
-      "Prioritize based on impact on revenue, retention, or efficiency",
-      "Validate ideas through experiments before scaling",
-      "Use funnel and cohort analysis to identify drop-offs",
-      "Focus on reducing friction across user journeys"
+      "Prioritise using impact on retention, revenue, or efficiency — always with a baseline",
+      "Distinguish between leading indicators (e.g. rewards tab views) and lagging outcomes (M3 retention)",
+      "Validate causal attribution before claiming lift — isolate signal from blended noise",
+      "Use cohort and funnel analysis to locate drop-off, not just report on it"
     ],
     "strengths": [
       "Growth systems and referral loops",
-      "Retention and lifecycle design",
-      "A/B experimentation",
-      "Workflow automation and CX improvements",
-      "Cross-functional execution"
-    ]
+      "Retention lifecycle design and cohort analysis",
+      "A/B experimentation with rigorous attribution",
+      "0→1 operational platform builds (POS, inventory, support automation)",
+      "Cross-functional execution with engineering, design, ops, and support teams",
+      "AI workflow automation — n8n pipelines, Claude-powered tooling, Lovable prototyping"
+    ],
+    "superpower": "Defaulting to the source of truth over secondhand requirements. My best decisions — like building the POS system — started with store visits before a single line of spec was written.",
+    "growth_area": "Moving from tactical AI usage (automating my own workflows) to AI-native product design — embedding AI into the core experience, not as a feature but as the default interaction layer."
   },
 
   "experience": [
     {
       "company": "NewMe",
       "role": "Product Manager",
-      "duration": "Sep 2024 – Present",
-      "ownership_areas": [
-        "Growth and activation",
-        "Retention and lifecycle",
-        "Post-purchase and customer experience",
-        "Omnichannel and offline systems (POS, inventory)",
-        "CRM and experimentation"
-      ],
-      "key_contributions": [
-        "Owned end-to-end post-purchase journeys including delivery, returns, exchanges, and customer support",
-        "Implemented Kapture bot and ticketing system, increasing automated query resolution from ~20% to ~65%",
-        "Built and launched rewards program (Trend Coins)",
-        "Designed and shipped referral program driving incremental signups and orders",
-        "Led multiple A/B experiments across AOV, prepaid share, margins, and inventory liquidation",
-        "Prototyped POS UI and worked closely with engineering on offline rollout",
-        "Built end-to-end POS and inventory management system for offline stores"
-      ],
-      "impact": [
-        "Improved M3 retention by ~22%",
-        "Increased signups by ~12% and daily orders by ~3%",
-        "Improved CSAT from ~2.5 to ~3.6",
-        "Reduced customer support load via automation",
-        "Eliminated ~₹50L+ annual costs",
-        "Improved store margins by ~3%"
-      ]
+      "duration": "Sep 2024 – Jun 2025",
+      "context": "D2C fast fashion platform targeting Gen Z women. I owned three product tracks simultaneously: growth and activation, post-purchase and customer experience, and omnichannel platform (retail).",
+      "tracks": {
+        "growth": {
+          "ownership": "New user conversion across web and mobile, rewards program, referral program, A/B experimentation on checkout and offers",
+          "key_projects": [
+            {
+              "name": "Day 0 Offer Strategy",
+              "problem": "New users were not converting on their first session. Baseline Day 0 conversion was low and flat across cohorts.",
+              "solution": "Designed cohort-based, session-wise and time-bound escalating discounts — 15% → 20% → 25% — with urgency windows to drive first purchase. A/B tested against a flat discount control.",
+              "impact": "~10% lift in Day 0 conversion, ~5% uplift in overall new-user conversion rate. Contribution margin protected via minimum order value floors.",
+              "how_measured": "A/B test comparing escalating cohort vs flat offer. Tracked Day 0 CVR, overall new-user CVR, and CM2 per cohort."
+            },
+            {
+              "name": "Rewards Program (Trend Coins)",
+              "problem": "M3 retention was weak — users were not forming repeat purchase habits.",
+              "solution": "Designed and launched Trend Coins, a unified reward currency. Coin value set at ₹0.10. Included both transactional earning (orders) and non-transactional earning (profile completion, reviews). Ran a randomised A/B test to isolate the rewards program's independent effect.",
+              "impact": "8% M3 retention lift attributable to the rewards program in isolation (via A/B test). The overall retention metric improved ~22% during the period, but that blended in seasonal and campaign effects — the isolated lift from rewards alone is 8%.",
+              "important_distinction": "Always cite 8% as the validated causal lift from rewards. The 22% is a blended metric across the period and overstates the program's independent contribution.",
+              "how_measured": "Randomised A/B test with rewards vs no-rewards cohorts. Tracked M3 retention as primary metric, with rewards tab views and enrollment rate as leading indicators."
+            },
+            {
+              "name": "Referral Program",
+              "problem": "High CAC and limited organic acquisition channel.",
+              "solution": "Built a two-sided referral loop rewarding both referrer and referee. Tied rewards to first order completion, not just signup.",
+              "impact": "+12% signups, +3% daily orders, positive CM2 impact.",
+              "how_measured": "Tracked referral-attributed signups, first-order conversion from referrals, incremental daily order volume, and CM2 impact post-referral reward cost."
+            },
+            {
+              "name": "Checkout A/B Experiments",
+              "problem": "Drop-off between cart and order placement.",
+              "solution": "Ran structured A/B experiments on checkout flow — copy, friction reduction, prepaid incentives.",
+              "impact": "8% improvement in checkout-to-order conversion.",
+              "how_measured": "A/B test on checkout variants, primary metric checkout-to-order rate."
+            }
+          ]
+        },
+        "post_purchase_cx": {
+          "ownership": "Returns, exchanges, delivery tracking, customer support, payment gateway integrations",
+          "key_projects": [
+            {
+              "name": "Support Automation (Bot + Ticketing)",
+              "problem": "Query resolution rate was 20%. Support was manual, slow, and creating high CSAT drag. Return requests were handled by agents without any risk profiling.",
+              "solution": "Implemented Kapture bot and ticketing system. Built a risk-profile model that automatically approved returns for 60–65% of users classified as low-risk, backtested at 95% agent approval rate. This freed agents to handle complex cases.",
+              "impact": "Resolution rate 20% → 65%. CSAT 2.5 → 3.6. Return-specific CSAT 1.0 → 3.0.",
+              "how_measured": "Resolution rate = queries auto-resolved / total queries raised. CSAT tracked post-interaction. Return CSAT tracked separately.",
+              "stakeholder_conflict": "Support ops wanted maximum automation; risk ops flagged abuse risk on blanket return approvals. Resolved by introducing the risk-profiling layer — automated for low-risk users, human-in-loop for flagged profiles."
+            },
+            {
+              "name": "Payment Gateway Integrations",
+              "problem": "Fragmented refund flows across gateways causing customer confusion and repeat support queries.",
+              "solution": "Drove 3rd-party payment integrations across 3 gateways, standardising refund flows and communication.",
+              "impact": "40% reduction in payment/refund-related support queries."
+            }
+          ]
+        },
+        "omnichannel_platform": {
+          "ownership": "POS system, inventory management, auto-replenishment system for retail stores",
+          "key_projects": [
+            {
+              "name": "POS & Inventory Management System (0→1)",
+              "problem": "Retail stores were running on expensive third-party tools with no integration to central inventory. ₹50L+ in annual recurring licensing and operational costs. Store managers lacked visibility into stock, leading to stockouts and overstock.",
+              "solution": "Did store visits pre-discovery to understand workflows firsthand. Defined requirements, user flows, and rollout strategy in close collaboration with biz, design, and engineering. Built an end-to-end in-house POS and inventory management system from zero.",
+              "impact": "₹50L+ annual recurring costs eliminated. Planning efficiency improved 30%+. Store margins improved ~3%.",
+              "how_measured": "Cost savings tracked against prior licensing invoices. Planning efficiency measured via stock accuracy and replenishment cycle time. Margin improvement tracked per store cohort post-rollout.",
+              "differentiator": "Started with store visits before writing a single requirement — this is what made the product fit actual workflows rather than imagined ones."
+            },
+            {
+              "name": "Auto Replenishment System (ARS) Optimisation",
+              "problem": "Replenishment logic was not accounting for real-time sell-through rates, leading to planning inefficiencies.",
+              "solution": "Optimised ARS rules and triggers based on sell-through data.",
+              "impact": "Planning efficiency improved 30%+."
+            }
+          ]
+        }
+      }
     },
     {
       "company": "Spinny",
       "role": "Associate Product Manager",
       "duration": "Aug 2023 – Aug 2024",
-      "ownership_areas": [
-        "Retention and lifecycle",
-        "Dealer experience and onboarding",
-        "Pricing and negotiation workflows",
-        "WhatsApp and chatbot journeys",
-        "Supply-side operations"
-      ],
-      "key_contributions": [
-        "Designed price negotiation workflow improving engagement and acceptance",
-        "Led retention initiatives across WhatsApp and chatbot flows",
-        "Worked on Spinny Partners onboarding experience",
-        "Built standardized car rating system",
-        "Optimized interstate delivery flows"
-      ],
-      "impact": [
-        "+15% price requests, +7% acceptance",
-        "₹10L/month savings",
-        "+10% CTR",
-        "+12% onboarding",
-        "-5% dealer back-outs"
+      "context": "Used cars marketplace. I owned consumer engagement, lifecycle, and dealer-side experience products.",
+      "key_projects": [
+        {
+          "name": "Price Negotiation Workflow",
+          "problem": "Buyers on listing pages had no mechanism to signal price intent. Dealers lacked demand signals.",
+          "solution": "Designed a price negotiation flow on the listing page allowing buyers to submit price requests. Built dealer-side visibility into request volume and acceptance logic.",
+          "impact": "+15% price requests submitted, +7% acceptance rate.",
+          "how_measured": "Funnel tracking on listing page — price request CTA clicks, submissions, dealer acceptance rate."
+        },
+        {
+          "name": "Retention Marketing — WhatsApp & Chatbot",
+          "problem": "High marketing spend on retention with poor chatbot response rates.",
+          "solution": "Optimised WhatsApp journeys and chatbot flows based on response data.",
+          "impact": "₹10L/month cost savings. +40% chatbot response rate. +10% CTR."
+        },
+        {
+          "name": "Spinny Partners (Dealer Onboarding)",
+          "problem": "Spinny Auctions rebranding to Spinny Partners required a new onboarding experience for dealer partners.",
+          "solution": "Built the Spinny Partners website and onboarding flow.",
+          "impact": "+12% new dealer onboarding."
+        },
+        {
+          "name": "Car Rating System",
+          "problem": "Dealer decision-making on inventory was subjective and inconsistent.",
+          "solution": "Built a 1–5 numerical car rating system based on standardised criteria.",
+          "impact": "Improved dealer decision quality; standardised across operations."
+        },
+        {
+          "name": "Interstate Delivery Optimisation",
+          "problem": "Dealer back-outs on interstate deliveries causing logistics waste.",
+          "solution": "Integrated Google Maps for delivery time and distance transparency at point of purchase.",
+          "impact": "-5% dealer back-outs."
+        }
       ]
     },
     {
       "company": "Anarock",
       "role": "Associate Product Manager",
       "duration": "Jun 2022 – Aug 2023",
-      "ownership_areas": [
-        "B2B CRM enhancements",
-        "Internal tools",
-        "Finance and invoicing systems"
-      ],
-      "key_contributions": [
-        "Shipped CRM improvements for enterprise clients",
-        "Led invoicing module roadmap and execution",
-        "Improved reimbursement and expense workflows"
-      ],
-      "impact": [
-        "8 clients onboarded",
-        "₹4L ARR added",
-        "₹50L/month handled via workflows"
+      "context": "B2B PropTech — internal CRM and tools for channel partners and brokers.",
+      "key_projects": [
+        {
+          "name": "CRM Enhancements for Channel Partners",
+          "problem": "Existing CRM lacked features for broker and dealer workflows.",
+          "solution": "Shipped app and CRM improvements in close coordination with enterprise clients.",
+          "impact": "8 clients onboarded, ₹4L ARR added."
+        },
+        {
+          "name": "Internal Invoicing Module",
+          "problem": "Finance team had no internal invoicing tooling — relied on manual processes.",
+          "solution": "Led roadmap and execution of the invoicing module. Managed a pod of 6 (devs, designers, QA).",
+          "impact": "Handled ₹50L/month in reimbursements via automated workflows."
+        }
       ]
     },
     {
       "company": "Jupiter",
       "role": "Product Management Intern",
       "duration": "Jan 2022 – Jun 2022",
+      "context": "Fintech neobank. Focused on rewards integrity.",
       "key_contributions": [
-        "Reduced reward abuse using analytics",
+        "Identified reward abuse patterns via analytics",
         "Built reward reversal workflows",
         "Improved rewards CX"
       ],
-      "impact": [
-        "-80% reward abuse",
-        "₹16L saved",
-        "+15% CSAT"
-      ]
+      "impact": ["-80% reward abuse", "₹16L saved", "+15% CSAT"]
     },
     {
       "company": "PharmEasy",
       "role": "Business Analyst Intern",
       "duration": "Feb 2021 – Jun 2021",
+      "context": "Health-tech marketplace. OTC brand ranking and placement ROI.",
       "key_contributions": [
         "Built brand ranking logic for OTC marketplace",
-        "Analyzed ROI of banner placements",
-        "Worked with SQL on marketplace data"
+        "Analysed ROI of banner placements using SQL",
+        "Optimised placement strategy"
       ],
-      "impact": [
-        "+10% revenue uplift from optimized placements"
-      ]
+      "impact": ["+10% revenue uplift from optimised placements"]
     },
     {
       "company": "HackerRank",
       "role": "Product Analyst Intern",
-      "duration": "Jan 2022 – Jun 2022",
-      "key_contributions": [
-        "Built Looker dashboards",
-        "Performed cohort analysis",
-        "Identified adoption drop-offs"
-      ],
-      "impact": [
-        "Improved product decisions via analytics",
-        "Received full-time offer"
-      ]
+      "duration": "Jun 2021 – Aug 2021",
+      "context": "Built Looker dashboards and ran cohort analysis to identify adoption drop-offs.",
+      "impact": ["Improved product decisions via analytics", "Received full-time offer"]
     }
   ],
 
   "projects": [
     {
+      "id": "day0_offer_strategy",
+      "title": "Day 0 Offer Strategy — New User Conversion",
+      "company": "NewMe",
+      "problem": "New users landing on the app were not converting on Day 0. Flat discount offers weren't creating urgency.",
+      "solution": "Cohort-based escalating discount strategy (15% → 20% → 25%) with session-wise and time-bound triggers. A/B tested vs flat discount control. Minimum order value floors protected contribution margin.",
+      "metrics": {
+        "day0_conversion_lift": "~10%",
+        "overall_new_user_conversion_lift": "~5%",
+        "cm_impact": "Protected via MOV floors"
+      },
+      "learnings": ["Urgency outperforms discount depth", "Cohort-level personalisation matters more than blanket offers", "Always pair conversion experiments with margin guardrails"]
+    },
+    {
       "id": "rewards_program",
       "title": "Rewards Program (Trend Coins)",
       "company": "NewMe",
-      "problem": "Low retention and weak repeat purchase behavior",
-      "solution": "Built a unified reward currency integrated across user lifecycle",
-      "impact": "Improved retention, engagement, prepaid adoption, and conversion",
-      "learnings": [
-        "Simplicity > complexity",
-        "Visibility drives usage",
-        "Emotional design improves engagement"
-      ]
+      "problem": "M3 retention was weak. Users had no ongoing reason to return between purchase cycles.",
+      "solution": "Designed Trend Coins — ₹0.10 per coin, earned transactionally (orders) and non-transactionally (reviews, profile). Ran a randomised A/B test to isolate causal lift.",
+      "metrics": {
+        "m3_retention_lift_isolated": "8% (A/B validated)",
+        "blended_period_uplift": "22% (includes seasonal and campaign effects — not attributable to rewards alone)",
+        "key_distinction": "The 8% is the number to cite — it is causally isolated. The 22% is a blended metric."
+      },
+      "leading_indicators": ["Rewards tab views", "Coin enrollment rate"],
+      "lagging_outcome": "M3 retention rate",
+      "learnings": ["Non-transactional earning drives habit, not just purchase", "Visibility of coin balance directly drives engagement", "Always isolate program impact via A/B — blended metrics mislead"]
     },
     {
       "id": "referral_program",
       "title": "Referral Program",
       "company": "NewMe",
-      "problem": "High CAC and limited organic growth",
-      "solution": "Built referral loops rewarding both referrer and referee",
-      "impact": "+12% signups, +3% orders",
-      "learnings": [
-        "Incentivize both sides",
-        "Tie rewards to first order",
-        "Keep mechanics simple"
-      ]
+      "problem": "High CAC, limited organic channel, no word-of-mouth loop.",
+      "solution": "Two-sided referral with rewards tied to first order (not signup) to ensure quality acquisition. Kept mechanics simple — single share link, reward visibility upfront.",
+      "metrics": {
+        "signup_lift": "+12%",
+        "daily_order_lift": "+3%",
+        "cm_impact": "Positive CM2 after referral reward cost"
+      },
+      "learnings": ["Tie rewards to meaningful activation (first order), not vanity events (signup)", "Incentivise both sides equally", "Simplicity drives sharing behaviour"]
     },
     {
       "id": "pos_inventory_system",
-      "title": "POS & Inventory System",
+      "title": "POS & Inventory Management System (0→1)",
       "company": "NewMe",
-      "problem": "High cost and inefficiencies from third-party tools",
-      "solution": "Built in-house POS and inventory system",
-      "impact": "₹50L+ cost savings, improved store efficiency",
-      "learnings": [
-        "Operational tools need simplicity",
-        "User empathy is critical",
-        "Change management is key"
-      ]
+      "problem": "Retail stores used expensive third-party tools disconnected from central inventory. ₹50L+ in annual recurring costs. Store managers had no real-time visibility leading to stockouts and overstock.",
+      "discovery": "Did store visits pre-discovery — observed actual workflows, talked to store managers and ops staff before writing a single requirement. This is what shaped the eventual product.",
+      "solution": "Built an end-to-end in-house POS and inventory management system from zero. Defined requirements, user flows, and rollout strategy in collaboration with biz, design, and engineering.",
+      "metrics": {
+        "cost_savings": "₹50L+ annual recurring costs eliminated",
+        "planning_efficiency": "+30%+",
+        "store_margin_improvement": "~3%"
+      },
+      "learnings": ["Go to the source — store visits revealed requirements no stakeholder had articulated", "Operational tools need radical simplicity — users are not product-savvy", "Change management is as important as the product itself for offline rollouts"]
     },
     {
-      "id": "post_purchase_support",
-      "title": "Post-Purchase CX & Support Automation",
+      "id": "support_automation",
+      "title": "Post-Purchase Support Automation",
       "company": "NewMe",
-      "problem": "Poor post-purchase experience and high support load",
-      "solution": "Improved UX + implemented bot automation",
-      "impact": "Higher CSAT, reduced support load",
-      "learnings": [
-        "Post-purchase defines brand perception",
-        "Automation improves both CX and cost",
-        "Tight alignment with support teams is critical"
-      ]
+      "problem": "Query resolution rate was 20%. Support was fully manual. Return approval was agent-dependent with no risk logic, creating both cost and abuse risk.",
+      "solution": "Implemented Kapture bot + ticketing system. Built a risk-profile model — 60–65% of users (low-risk) get automated return approval, backtested at 95% agent approval rate. Agents handle complex/flagged cases only.",
+      "metrics": {
+        "resolution_rate": "20% → 65%",
+        "csat_overall": "2.5 → 3.6",
+        "return_csat": "1.0 → 3.0"
+      },
+      "stakeholder_conflict": "Support ops pushed for maximum automation. Risk ops flagged blanket return abuse risk. Resolution: introduced risk-profile layer that automated for low-risk users while keeping human review for flagged profiles. Both teams aligned once they saw the backtesting data.",
+      "learnings": ["Risk-profiling unlocks automation at scale without abuse exposure", "Post-purchase experience has outsized impact on brand perception and repeat purchase", "Ops alignment is a prerequisite — ship only once support and risk teams are co-owners"]
     }
   ],
 
   "skills": {
     "product": [
-      "Product discovery",
-      "PRD writing",
-      "A/B experimentation",
-      "Growth strategy",
-      "Retention systems",
+      "Product discovery (user interviews, store visits, ops shadowing)",
+      "PRD and user story writing",
+      "A/B experimentation design and analysis",
+      "Growth strategy (acquisition, activation, retention, referral)",
+      "Retention and lifecycle systems",
       "Customer experience design",
+      "0→1 product development",
       "Stakeholder management"
     ],
     "analytics": [
       "SQL",
       "Cohort analysis",
       "Funnel analysis",
-      "Experiment analysis",
-      "Metrics definition"
+      "Experiment analysis and causal attribution",
+      "Metrics definition (leading vs lagging indicators)",
+      "Power user curve analysis"
     ],
     "tools": [
       "Amplitude",
@@ -227,22 +302,48 @@
       "Clevertap",
       "Metabase",
       "Looker",
-      "JIRA"
+      "JIRA",
+      "n8n (workflow automation)",
+      "Lovable (rapid prototyping)",
+      "Python (basic)",
+      "Claude API (AI-powered tooling)"
     ],
     "collaboration": [
-      "Cross-functional leadership",
-      "Design and engineering collaboration",
-      "Operations collaboration",
-      "Store team enablement"
+      "Cross-functional leadership (engg, design, data, ops, support, finance)",
+      "Retail and store team enablement",
+      "Risk and compliance stakeholder alignment",
+      "Vendor and integration management"
+    ]
+  },
+
+  "job_search": {
+    "status": "Actively interviewing — immediate joiner",
+    "positioning": "Consumer-facing growth PM with 0→1 platform experience and AI-native product thinking",
+    "target_roles": "Product Manager / Senior PM — growth, retention, CX, or platform products in consumer startups",
+    "companies_interviewing": ["Technosport", "Porter", "GobbleCube AI", "Rupeek"],
+    "key_differentiators": [
+      "Rare combination of consumer growth PM + operational platform builder (POS, inventory, support infra)",
+      "Experiment-first with rigorous causal attribution — not just reporting metrics but isolating them",
+      "AI-native: built personal workflow tools using n8n, Claude, and Lovable — not just a user of AI",
+      "Immediate joiner with full context on current consumer market dynamics"
     ]
   },
 
   "interests": {
     "personal": [
       "Exploring food and street cuisines",
-      "Cricket and following players like Virat Kohli",
+      "Cricket — big Virat Kohli follower",
       "Crime thrillers and novels",
-      "Learning about startups and scaling businesses"
+      "Building side tools and AI workflows",
+      "Following startup ecosystems and D2C brands in India"
     ]
+  },
+
+  "faq": {
+    "why_leave_newme": "NewMe scaled into offline retail, which made the product surface more operational. I want to go deeper on consumer growth and AI-native product problems — that's where my energy is and where I think I have the most to contribute.",
+    "biggest_achievement": "Building the POS system from zero — not because it was technically hard, but because I started with store visits, not specs. That discovery-first approach is what made it actually work in practice.",
+    "how_you_work_with_eng": "I come to engineering with a clear problem statement and user context, not a feature list. I involve engineers early in discovery so they can shape the solution, not just execute it. At NewMe, the POS system architecture was co-designed with the eng lead based on what we both saw in stores.",
+    "how_you_use_data": "I define a metric pair before building — a leading indicator I can observe in days and a lagging outcome I care about. For rewards, that was rewards tab views + enrollment rate (leading) and M3 retention (lagging). The leading indicator tells me if the product is being used; the lagging indicator tells me if it's working.",
+    "ai_in_your_work": "I use n8n to automate lead-sourcing workflows, Claude for structured thinking and writing, and Lovable for fast UI prototyping. I also built a Claude-powered skill for job tracking. But more importantly, I think about how to embed AI natively into products — not as a chatbot bolt-on, but as the default interaction layer."
   }
 }
