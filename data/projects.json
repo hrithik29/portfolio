@@ -3,136 +3,183 @@
     "id": "rewards_program",
     "title": "Rewards Program (Trend Coins)",
     "company": "NewMe",
-    "problem": "Low retention and weak repeat purchase behavior among Gen-Z users, with discount dependence and limited engagement between orders.",
+    "track": "Growth",
+    "problem": "M3 retention was weak — users were making one or two purchases and dropping off. The product had no ongoing engagement mechanism between purchase cycles, and the brand was over-reliant on discounts to drive repeat orders.",
     "goals": [
-      "Increase repeat purchases",
-      "Boost prepaid adoption to reduce returns",
-      "Lift conversion and average order value by creating engaging, playful incentives"
+      "Improve M3 retention by building a habit-forming engagement loop",
+      "Reduce discount dependence by creating non-discount value for repeat users",
+      "Boost prepaid adoption by making rewards tangible at checkout"
     ],
-    "my_role": "Led research, design, benchmarking, and product definition for the Trend Coins loyalty ecosystem; partnered with design and engineering to scope and iterate product flows.",
+    "my_role": "End-to-end ownership — from ideation and competitor benchmarking through incentive design, A/B test design, and post-launch iteration. Partnered with design and engineering for execution.",
     "key_decisions": [
-      "Unified a single currency (Trend Coins) to simplify reward earning and redemption across touchpoints",
-      "Surface reward opportunities at checkout and other decision points to make rewards tangible",
-      "Design brand-aligned, playful identity for trend coins to resonate with Gen-Z users"
+      "Chose a unified coin currency (₹0.10 per coin) over a tier system — simpler to understand, faster to drive habit",
+      "Included non-transactional earning (reviews, profile completion) to build engagement between orders, not just at purchase",
+      "Made coin balance visible across navigation, checkout, and success screens — visibility drives usage",
+      "Ran a randomised A/B test to isolate the program's causal impact from seasonal and campaign noise"
     ],
     "execution": [
-      "Conducted research to benchmark competitor loyalty programs and understand Gen-Z motivators",
-      "Iterated multiple design concepts (gamified flows, progress nudges, visibility across UI)",
-      "Implemented coin visibility in navigation, checkout, profile, and success screens"
+      "Benchmarked loyalty programs across D2C, fashion, and fintech to identify what resonates with Gen Z",
+      "Designed coin earning logic, redemption flow, and visibility across key UI touchpoints",
+      "A/B tested rewards-enrolled vs control cohort to measure isolated retention lift",
+      "Tracked rewards tab views and enrollment rate as leading indicators for M3 retention"
     ],
-    "metrics": [
-      "Improved retention by creating gamified reward touchpoints",
-      "Positive shifts in prepaid adoption via visible reward incentives",
-      "Increased conversion and AOV by making rewards part of checkout decisions"
-    ],
-    "impact": "Trend Coins transformed discount-driven transactions into a loyalty engine that improved retention, engagement, and prepaid adoption.",
+    "metrics": {
+      "primary": "8% M3 retention lift — A/B validated, causally isolated to the rewards program",
+      "important_note": "Overall retention improved ~22% during this period, but that includes seasonal and campaign effects. The 8% is the number attributable specifically to the rewards program.",
+      "leading_indicators": "Rewards tab views and coin enrollment rate — validated as predictive of M3 retention",
+      "secondary": "Positive shifts in prepaid adoption and AOV among rewards-enrolled users"
+    },
+    "impact": "The rewards program delivered an 8% lift in M3 retention (A/B isolated), turning a discount-first acquisition loop into a loyalty engine. Non-transactional earning created product touchpoints between orders, reducing churn without increasing CAC.",
     "learnings": [
-      "Simplicity and visibility matter more than overly complex tier systems",
-      "Rewards must be playful and integrated directly into key decision flows",
-      "Brand-aligned identity enhances emotional connection and long-term engagement"
+      "Isolate causal impact via A/B test — blended metrics (22%) are misleading and hard to defend in reviews",
+      "Non-transactional earning builds habit; transactional earning alone just moves the discount",
+      "Coin visibility at checkout directly influences redemption and AOV — placement is as important as incentive design"
+    ]
+  },
+  {
+    "id": "day0_offer_strategy",
+    "title": "Day 0 Offer Strategy — New User Conversion",
+    "company": "NewMe",
+    "track": "Growth",
+    "problem": "New users were landing on the app but not converting on their first session. Flat welcome discounts weren't creating urgency and were eroding contribution margin without proportional conversion lift.",
+    "goals": [
+      "Improve Day 0 conversion rate for new users",
+      "Create urgency without blanket discount depth",
+      "Protect contribution margin while improving conversion"
+    ],
+    "my_role": "Owned the offer strategy end-to-end — hypothesis design, cohort structure, A/B test setup, and post-experiment iteration.",
+    "key_decisions": [
+      "Switched from flat discount to escalating cohort model: 15% → 20% → 25% triggered by session count and time elapsed",
+      "Added urgency windows — offers expired within defined time to prevent deferral",
+      "Set minimum order value floors to protect CM2 even at peak discount depth"
+    ],
+    "execution": [
+      "Defined cohort logic (session-wise and time-based triggers) with engineering",
+      "A/B tested escalating offer vs flat discount control on new user cohorts",
+      "Tracked Day 0 CVR, overall new-user CVR, and CM2 per cohort as success metrics"
+    ],
+    "metrics": {
+      "day0_conversion_lift": "~10% improvement in Day 0 conversion rate",
+      "overall_new_user_conversion_lift": "~5% uplift in overall new-user conversion",
+      "cm_impact": "Contribution margin protected via MOV floors despite higher peak discount depth"
+    },
+    "impact": "The cohort-based escalating offer strategy improved Day 0 conversion by ~10% and overall new-user conversion by ~5%, without sacrificing contribution margin.",
+    "learnings": [
+      "Urgency (time-bound, escalating) outperforms discount depth on Day 0",
+      "Flat discounts are blunt instruments — cohort-level personalisation is more efficient",
+      "Always pair conversion experiments with a CM guardrail metric"
     ]
   },
   {
     "id": "referral_program",
-    "title": "Referral Program for New User Acquisition",
+    "title": "Referral Program",
     "company": "NewMe",
-    "problem": "High customer acquisition costs and limited organic growth channels, with a need to acquire high-intent users efficiently.",
+    "track": "Growth",
+    "problem": "NewMe was heavily dependent on paid acquisition. There was no organic or word-of-mouth growth loop. CAC was high and not reducing with scale.",
     "goals": [
-      "Reduce customer acquisition cost",
-      "Drive incremental new user acquisition",
-      "Leverage existing users as a growth channel"
+      "Build a scalable organic acquisition channel",
+      "Reduce blended CAC via referral-driven signups",
+      "Acquire high-intent users who convert and retain"
     ],
-    "my_role": "Owned the end-to-end referral program including incentive design, eligibility rules, flow definition, and collaboration with design and engineering teams.",
+    "my_role": "Owned end-to-end — incentive design, eligibility rules, flow definition, tracking setup, and post-launch iteration.",
     "key_decisions": [
-      "Reward both referrer and referee to maximize participation",
-      "Offer cash incentive to referrer and discount to referee to balance motivation and cost",
-      "Trigger rewards only after successful first order to ensure user quality"
+      "Two-sided reward: referrer gets cash incentive, referee gets discount — both sides motivated",
+      "Rewards trigger only on first completed order, not signup — ensures quality acquisition not vanity signups",
+      "Single share link with upfront reward visibility — simplicity maximises sharing"
     ],
     "execution": [
-      "Designed referral flows across app entry points and post-purchase moments",
-      "Defined reward logic, eligibility rules, and success conditions",
-      "Worked with engineering to implement referral tracking and reward fulfillment",
-      "Monitored performance and iterated on incentives to balance cost and quality"
+      "Designed referral flows across app entry points and post-purchase moments (high-intent sharing windows)",
+      "Defined reward logic, eligibility rules, fraud guardrails, and success conditions",
+      "Worked with engineering on referral tracking and reward fulfillment",
+      "Monitored referral-attributed signups, first-order CVR, and CM2 post-reward cost"
     ],
-    "metrics": [
-      "Incremental new users acquired through referrals",
-      "Improved acquisition efficiency compared to paid channels",
-      "Healthy first-order conversion from referred users"
-    ],
-    "impact": "The referral program became a scalable acquisition lever, driving incremental new users while helping reduce overall acquisition costs.",
+    "metrics": {
+      "signup_lift": "+12% incremental signups",
+      "daily_order_lift": "+3% daily orders",
+      "cm_impact": "Positive CM2 after referral reward cost — net positive acquisition"
+    },
+    "impact": "The referral program added +12% signups and +3% daily orders with positive CM2 impact, creating a scalable organic channel that reduced dependence on paid acquisition.",
     "learnings": [
-      "Rewarding both sides significantly improves participation rates",
-      "Tying rewards to first successful orders improves user quality",
-      "Simple, transparent incentives outperform complex referral mechanics"
+      "Tie rewards to first order, not signup — quality of referred users is what matters",
+      "Two-sided incentives are necessary — single-sided referral programs have low participation",
+      "Post-purchase is the highest-intent moment to prompt sharing — that's where we saw most referral initiations"
     ]
   },
   {
     "id": "pos_inventory_system",
-    "title": "POS and Inventory Management System",
+    "title": "POS & Inventory Management System (0→1)",
     "company": "NewMe",
-    "problem": "Dependence on third-party systems created operational bottlenecks, high costs, and limited visibility into inventory across offline stores and the organization.",
+    "track": "Omnichannel Platform",
+    "problem": "As NewMe expanded into offline retail, stores were running on expensive third-party POS tools with no integration to central inventory. This created ₹50L+ in annual recurring licensing costs, poor inventory visibility, planning inefficiencies, and stockout/overstock cycles that hurt store margins.",
     "goals": [
-      "Eliminate third-party billing and inventory dependencies",
-      "Improve billing speed and accuracy at stores",
-      "Enable real-time inventory visibility across the organization",
-      "Support scalable offline retail expansion"
+      "Eliminate third-party tool dependency and associated costs",
+      "Give store managers real-time inventory visibility",
+      "Build a foundation for scalable offline retail expansion"
     ],
-    "my_role": "Owned the project end-to-end, from conceptualization and user research to PRD creation, prioritization, execution, and training store teams on the new system.",
+    "my_role": "End-to-end ownership from discovery through rollout. Visited stores pre-discovery, wrote PRD, defined user flows, and led store onboarding and training.",
+    "discovery": "Before writing a single requirement, I visited stores and observed actual workflows — how staff billed customers, how they tracked inventory, where they made errors. This revealed requirements that no stakeholder had articulated: billing speed under peak load, offline fallback when internet dropped, and the need for a daily stock reconciliation view. The product was shaped by what I saw, not what I was told.",
     "key_decisions": [
-      "Build an in-house POS and inventory system to remove third-party constraints",
-      "Design workflows optimized for store staff with minimal operational friction",
-      "Prioritize billing accuracy and inventory consistency over feature breadth in v1"
+      "Build in-house vs buy — chose in-house to remove third-party dependency permanently and own the roadmap",
+      "Prioritised billing accuracy and inventory consistency in v1 over feature breadth — reliability matters more than richness in operational tools",
+      "Designed for store staff, not tech users — minimal cognitive load, optimised for speed under pressure",
+      "Built offline fallback mode — stores can't stop billing when internet drops"
     ],
     "execution": [
-      "Conducted user research with store teams to identify pain points and workflow gaps",
-      "Defined end-to-end requirements for billing, inventory updates, returns, and exchanges",
-      "Worked closely with engineering to build an enterprise-grade POS system",
-      "Led store onboarding and training to ensure smooth adoption"
+      "Conducted store visits and shadowed billing and inventory workflows before PRD",
+      "Defined end-to-end requirements for billing, inventory updates, returns, exchanges, and daily reconciliation",
+      "Collaborated with engineering on architecture — co-designed with eng lead based on store visit learnings",
+      "Led store onboarding: trained staff, ran parallel runs before cutover, managed change resistance"
     ],
-    "metrics": [
-      "Billing speed and error rate",
-      "Inventory accuracy across stores",
-      "Operational efficiency for store teams"
-    ],
-    "impact": "Delivered a highly reliable POS and inventory system that enabled smooth offline operations, reduced errors, eliminated third-party costs, and significantly improved inventory visibility across the organization.",
+    "metrics": {
+      "cost_savings": "₹50L+ annual recurring costs eliminated",
+      "planning_efficiency": "30%+ improvement in planning efficiency",
+      "store_margin": "~3% store margin improvement",
+      "scale": "Rolled out across all offline retail locations"
+    },
+    "impact": "Built an end-to-end POS and inventory system from zero that eliminated ₹50L+ in annual costs, improved planning efficiency by 30%+, and improved store margins by ~3%. Became the operational backbone for NewMe's offline retail expansion.",
     "learnings": [
-      "Operational products require deep empathy for frontline users",
-      "Simplicity and reliability matter more than feature richness in high-stakes systems",
-      "Strong change management is critical when replacing core operational tools"
+      "Go to the source — store visits revealed requirements no stakeholder meeting would have surfaced",
+      "Operational products need radical simplicity — the user is a store staff member under peak load, not a power user",
+      "Change management is as hard as the product build — adoption requires training, parallel runs, and patience",
+      "0→1 platform work requires co-designing with engineering from day one, not handing over a spec"
     ]
   },
   {
     "id": "post_purchase_support",
-    "title": "Post-Purchase Experience & Customer Support Bot",
+    "title": "Post-Purchase CX & Support Automation",
     "company": "NewMe",
-    "problem": "Post-purchase journeys (delivery, returns) had friction and limited visibility, leading to lower NPS and high support load on customer service agents.",
+    "track": "Post-Purchase & Customer Experience",
+    "problem": "Query resolution rate was stuck at 20% — 80% of support queries required human intervention. Return approvals were fully agent-dependent with no risk logic, creating high ops cost and abuse exposure. CSAT was 2.5 and return-specific CSAT was 1.0 — effectively one star.",
     "goals": [
-      "Improve post-delivery and returns NPS",
-      "Enhance overall customer experience after purchase",
-      "Reduce support ticket volume through better self-serve and bot interactions"
+      "Increase query resolution rate through automation",
+      "Improve CSAT across support and returns touchpoints",
+      "Reduce agent load without increasing abuse risk"
     ],
-    "my_role": "Led improvements across post-purchase UX flows and customer support automation, working across product, design, engineering, and support operations.",
+    "my_role": "Led the full initiative — from bot selection and integration to risk-profiling model design, working across product, engineering, support ops, and risk ops.",
     "key_decisions": [
-      "Identify and remove bottlenecks in delivery and returns user journeys",
-      "Integrate an external customer support platform to improve automation",
-      "Prioritize bot workflows that resolve common queries without human intervention"
+      "Implemented Kapture as the bot and ticketing platform — evaluated for automation capability and integration fit",
+      "Built a risk-profile model for return approvals: auto-approve 60–65% of users classified as low-risk, human review for flagged profiles",
+      "Backtested the risk model at 95% agent approval rate before going live — gave risk ops confidence to sign off",
+      "Kept agents focused on complex and flagged cases only — improved both agent efficiency and resolution quality"
     ],
     "execution": [
-      "Mapped end-to-end post-purchase user journeys to identify friction points",
-      "Improved UX and UI across delivery tracking and returns flows",
-      "Integrated external customer support platform",
-      "Designed workflows and automation rules to improve bot interactions"
+      "Mapped end-to-end post-purchase journeys to identify highest-friction support triggers",
+      "Integrated Kapture bot and ticketing system with engineering and support ops",
+      "Designed risk-profiling logic, backtested against historical return approvals, aligned with risk ops on thresholds",
+      "Set up resolution rate and CSAT as primary metrics with weekly tracking"
     ],
-    "metrics": [
-      "Customer support CSAT",
-      "NPS for post-delivery and returns surveys",
-      "Number of tickets handled by agents"
-    ],
-    "impact": "Improved overall CSAT and post-purchase NPS while reducing the number of tickets handled by support agents through better UX and automation.",
+    "stakeholder_conflict": "Support ops wanted maximum automation to reduce headcount pressure. Risk ops flagged that blanket return automation would expose the business to abuse. I resolved this by proposing the risk-profiling layer — auto-approve low-risk users (backtested at 95% agent approval rate), human review for flagged profiles. Both teams aligned once they saw the backtesting data. Neither got everything they wanted, but both got what they needed.",
+    "metrics": {
+      "resolution_rate": "20% → 65%",
+      "csat_overall": "2.5 → 3.6",
+      "return_csat": "1.0 → 3.0",
+      "automation_coverage": "60–65% of return requests auto-approved"
+    },
+    "impact": "Resolution rate tripled from 20% to 65%. Overall CSAT improved from 2.5 to 3.6. Return CSAT went from 1.0 to 3.0 — the single biggest CSAT jump in any initiative I ran at NewMe.",
     "learnings": [
-      "Small friction points in post-purchase flows significantly impact overall perception of the brand",
-      "Well-designed bot automation can improve both customer experience and operational efficiency",
-      "CX improvements require tight alignment between product and support teams"
+      "Risk-profiling is the unlock for automation at scale — blanket automation creates abuse, selective automation creates trust",
+      "Post-purchase is where brand perception is won or lost — a 1.0 return CSAT is a brand emergency, not an ops problem",
+      "Backtesting before go-live is how you get risk stakeholders on board — show them data, not arguments"
     ]
   }
 ]
