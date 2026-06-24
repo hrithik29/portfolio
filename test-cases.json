@@ -1,0 +1,363 @@
+[
+  {
+    "id": "TC01",
+    "category": "metrics",
+    "question": "What was the impact of the rewards program on retention?",
+    "ground_truth": {
+      "key_facts": [
+        "8% M3 retention lift — A/B isolated",
+        "The overall period showed ~22% but that includes seasonal and campaign effects",
+        "8% is the number attributable to rewards alone"
+      ],
+      "must_not_say": [
+        "22% retention lift from rewards",
+        "improved retention by 22%"
+      ]
+    },
+    "eval_criteria": {
+      "accuracy": "Must cite 8% as the isolated lift. Must NOT attribute 22% to the rewards program alone.",
+      "positioning": "Should explain the A/B isolation — this demonstrates rigour, not just results."
+    }
+  },
+  {
+    "id": "TC02",
+    "category": "metrics",
+    "question": "What did the referral program achieve?",
+    "ground_truth": {
+      "key_facts": [
+        "+12% signups",
+        "+3% daily orders",
+        "positive CM2 impact after referral reward cost"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must cite +12% signups and +3% daily orders. CM2 impact is a bonus.",
+      "positioning": "Should mention rewards were tied to first order (not signup) — this shows product thinking."
+    }
+  },
+  {
+    "id": "TC03",
+    "category": "metrics",
+    "question": "What was the impact of the support automation project?",
+    "ground_truth": {
+      "key_facts": [
+        "Query resolution rate improved from 20% to 65%",
+        "CSAT improved from 2.5 to 3.6",
+        "Return-specific CSAT improved from 1.0 to 3.0",
+        "60-65% of return requests auto-approved via risk-profile model"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must include resolution rate (20%→65%) and CSAT (2.5→3.6). Return CSAT (1.0→3.0) is a bonus.",
+      "positioning": "Should mention the risk-profiling approach — not just 'we automated it'."
+    }
+  },
+  {
+    "id": "TC04",
+    "category": "metrics",
+    "question": "How much did the POS system save the company?",
+    "ground_truth": {
+      "key_facts": [
+        "₹50L+ in annual recurring costs eliminated",
+        "30%+ improvement in planning efficiency",
+        "~3% store margin improvement"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must cite ₹50L+ cost savings. Planning efficiency and margin improvement are bonuses.",
+      "positioning": "Should mention this was a 0→1 build, not an optimisation."
+    }
+  },
+  {
+    "id": "TC05",
+    "category": "metrics",
+    "question": "What was Hrithik's impact at Spinny?",
+    "ground_truth": {
+      "key_facts": [
+        "+15% price negotiation requests",
+        "+7% acceptance rate",
+        "₹10L/month cost savings",
+        "+12% dealer onboarding",
+        "-5% dealer back-outs"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must cite at least 2-3 of the Spinny metrics accurately.",
+      "positioning": "Should frame Spinny as consumer + dealer-side ownership, not just one track."
+    }
+  },
+  {
+    "id": "TC06",
+    "category": "projects",
+    "question": "How did Hrithik approach building the POS system?",
+    "ground_truth": {
+      "key_facts": [
+        "Started with store visits before writing any requirements",
+        "Observed actual workflows — billing speed, offline fallback needs, stock reconciliation",
+        "Co-designed architecture with engineering lead based on store visit findings",
+        "Led store onboarding and training for change management"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must mention store visits as the starting point. This is the defining story of that project.",
+      "positioning": "Should highlight this as a product philosophy (go to source), not just a step in a process."
+    }
+  },
+  {
+    "id": "TC07",
+    "category": "projects",
+    "question": "How did Hrithik handle the conflict between support ops and risk ops on the returns automation?",
+    "ground_truth": {
+      "key_facts": [
+        "Support ops wanted maximum automation",
+        "Risk ops flagged abuse risk from blanket return automation",
+        "Resolution: built a risk-profile model — auto-approve low-risk users (60-65%), human review for flagged profiles",
+        "Backtested at 95% agent approval rate to get risk ops sign-off"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must describe the conflict and the risk-profiling resolution. Backtesting detail is a bonus.",
+      "positioning": "Should frame this as a data-driven resolution, not a compromise — the backtesting is what made it credible."
+    }
+  },
+  {
+    "id": "TC08",
+    "category": "projects",
+    "question": "What was the Day 0 offer strategy and what did it achieve?",
+    "ground_truth": {
+      "key_facts": [
+        "Cohort-based escalating discounts: 15% → 20% → 25%",
+        "Session-wise and time-bound triggers",
+        "~10% Day 0 conversion lift",
+        "~5% overall new-user conversion lift",
+        "CM2 protected via minimum order value floors"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must describe the escalating structure and the 10% Day 0 lift.",
+      "positioning": "Should mention CM guardrail — this shows business awareness alongside conversion focus."
+    }
+  },
+  {
+    "id": "TC09",
+    "category": "experience",
+    "question": "How many years of experience does Hrithik have?",
+    "ground_truth": {
+      "key_facts": [
+        "~4 years of product management experience",
+        "Roles at NewMe, Spinny, Anarock plus internships at Jupiter, PharmEasy, HackerRank"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must say ~4 years. Must not say 3 or 5.",
+      "positioning": "Should mention the breadth: B2C growth + B2B tools + operational platforms."
+    }
+  },
+  {
+    "id": "TC10",
+    "category": "experience",
+    "question": "What did Hrithik own at NewMe?",
+    "ground_truth": {
+      "key_facts": [
+        "Growth and new user activation",
+        "Retention and lifecycle (rewards, referrals)",
+        "Post-purchase and CX (returns, exchanges, delivery, support)",
+        "Omnichannel platform (POS, inventory management)"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must cover at least 3 of the 4 tracks. Single-track answers are incomplete.",
+      "positioning": "Should highlight the breadth — three distinct PM tracks in one role is unusual and differentiating."
+    }
+  },
+  {
+    "id": "TC11",
+    "category": "experience",
+    "question": "Is Hrithik available to join immediately?",
+    "ground_truth": {
+      "key_facts": [
+        "Yes — immediate joiner",
+        "Has left NewMe"
+      ],
+      "must_not_say": [
+        "currently working at NewMe",
+        "notice period"
+      ]
+    },
+    "eval_criteria": {
+      "accuracy": "Must confirm immediate availability. Must not say he's currently employed at NewMe.",
+      "positioning": "This is a recruiter question — answer should be direct and confident."
+    }
+  },
+  {
+    "id": "TC12",
+    "category": "behavioural",
+    "question": "What is Hrithik's superpower as a PM?",
+    "ground_truth": {
+      "key_facts": [
+        "Defaulting to the source of truth over secondhand requirements",
+        "Evidenced by POS store visits before writing any spec",
+        "Also: AI-native workflow thinking — n8n, Claude, Lovable"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Should mention the source-of-truth principle and anchor it to a real example (POS).",
+      "positioning": "Should not give a generic PM answer like 'stakeholder management' or 'data-driven'."
+    }
+  },
+  {
+    "id": "TC13",
+    "category": "behavioural",
+    "question": "Why did Hrithik leave NewMe?",
+    "ground_truth": {
+      "key_facts": [
+        "NewMe scaled into offline retail — product surface became more operational",
+        "Wants to go deeper on consumer growth and AI-native product problems",
+        "Pull motivation — not push (not negative about NewMe)"
+      ],
+      "must_not_say": [
+        "fired",
+        "laid off",
+        "unhappy",
+        "bad experience"
+      ]
+    },
+    "eval_criteria": {
+      "accuracy": "Must frame as pull motivation (what he's moving toward), not push (what he's leaving).",
+      "positioning": "Answer should not be negative about NewMe. Should show self-awareness about career direction."
+    }
+  },
+  {
+    "id": "TC14",
+    "category": "behavioural",
+    "question": "How does Hrithik use data in his work?",
+    "ground_truth": {
+      "key_facts": [
+        "Defines leading and lagging indicator pairs before building",
+        "Example: rewards tab views + enrollment rate (leading) → M3 retention (lagging)",
+        "Validates leading indicators as predictive before relying on them",
+        "Uses cohort and funnel analysis to locate drop-off"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Should mention leading vs lagging indicator framework. Generic 'I use data to make decisions' is insufficient.",
+      "positioning": "The rewards example is the best proof point — should ideally reference a specific pair."
+    }
+  },
+  {
+    "id": "TC15",
+    "category": "behavioural",
+    "question": "How does Hrithik work with engineering teams?",
+    "ground_truth": {
+      "key_facts": [
+        "Brings a clear problem statement and user context, not a feature list",
+        "Involves engineers early in discovery so they can shape the solution",
+        "POS architecture was co-designed with the engineering lead based on store visit findings"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Should mention involving engineers in discovery, not just execution.",
+      "positioning": "POS co-design story is the strongest proof point — should reference it."
+    }
+  },
+  {
+    "id": "TC16",
+    "category": "behavioural",
+    "question": "How does Hrithik use AI in his work?",
+    "ground_truth": {
+      "key_facts": [
+        "Uses n8n for workflow automation (lead-sourcing pipeline)",
+        "Uses Claude for structured thinking and writing",
+        "Uses Lovable for rapid UI prototyping",
+        "Built a Claude-powered skill for job tracking",
+        "Thinks about AI-native product design — embedding AI as default interaction layer, not bolt-on chatbot"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Should mention at least 2 specific tools (n8n, Claude, Lovable). Generic 'I use AI' is insufficient.",
+      "positioning": "Should distinguish between personal AI usage and thinking about AI-native product design."
+    }
+  },
+  {
+    "id": "TC17",
+    "category": "edge_cases",
+    "question": "What is Hrithik's biggest failure?",
+    "ground_truth": {
+      "key_facts": [
+        "Not explicitly documented — bot should acknowledge this gracefully",
+        "Should NOT hallucinate a failure story",
+        "Can redirect to learnings from projects"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must NOT fabricate a specific failure with made-up details. Should acknowledge it's not something documented and offer to discuss learnings instead.",
+      "positioning": "Graceful deflection is better than hallucination. Should feel honest, not evasive."
+    }
+  },
+  {
+    "id": "TC18",
+    "category": "edge_cases",
+    "question": "What is Hrithik's current salary expectation?",
+    "ground_truth": {
+      "key_facts": [
+        "Not documented — bot should say this isn't something it has information on",
+        "Should suggest reaching out to Hrithik directly"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "Must NOT fabricate a salary number. Should redirect to direct contact.",
+      "positioning": "Short, honest, professional."
+    }
+  },
+  {
+    "id": "TC19",
+    "category": "edge_cases",
+    "question": "Can Hrithik code?",
+    "ground_truth": {
+      "key_facts": [
+        "Has working knowledge of SQL and Python (basic)",
+        "Not a software engineer — is a PM",
+        "Uses tools like n8n, Lovable, Claude API for building workflows and prototypes"
+      ],
+      "must_not_say": [
+        "No, Hrithik cannot code",
+        "Hrithik is a developer"
+      ]
+    },
+    "eval_criteria": {
+      "accuracy": "Should accurately describe PM-level technical skills — SQL, Python basics, AI tools. Not over or under-claim.",
+      "positioning": "Should frame as 'technically fluent PM' not 'engineer' or 'non-technical'."
+    }
+  },
+  {
+    "id": "TC20",
+    "category": "edge_cases",
+    "question": "What companies is Hrithik interviewing at right now?",
+    "ground_truth": {
+      "key_facts": [
+        "Technosport, Porter, GobbleCube AI, Rupeek — documented in context",
+        "Bot can share this if it's in the knowledge base"
+      ],
+      "must_not_say": []
+    },
+    "eval_criteria": {
+      "accuracy": "If this is in the knowledge base, it should answer correctly. If not, should say it doesn't have this info.",
+      "positioning": "Should not hallucinate company names."
+    }
+  }
+]
