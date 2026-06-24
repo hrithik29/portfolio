@@ -22,7 +22,6 @@ const path = require("path");
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 
 const DEFAULT_PORTFOLIO_URL = "https://hrithik-jain.vercel.app";
-const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
 const TEST_CASES_PATH = path.join(__dirname, "test-cases.json");
 const RESULTS_DIR = path.join(__dirname, "results");
 
@@ -135,21 +134,25 @@ Respond ONLY with valid JSON in this exact format:
 }`;
 
   try {
-    const res = await fetch(ANTHROPIC_API_URL, {
+    const res = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "anthropic-version": "2023-06-01",
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1000,
-        messages: [{ role: "user", content: judgePrompt }],
+        model: "gpt-4o-mini",
+        messages: [
+          { role: "system", content: "You are a strict evaluator. Respond only with valid JSON." },
+          { role: "user", content: judgePrompt },
+        ],
+        temperature: 0,
+        max_tokens: 500,
       }),
     });
 
     const data = await res.json();
-    const raw = data.content?.[0]?.text || "{}";
+    const raw = data.choices?.[0]?.message?.content || "{}";
 
     // Strip markdown fences if present
     const clean = raw.replace(/```json|```/g, "").trim();
