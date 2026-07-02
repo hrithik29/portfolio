@@ -10,10 +10,10 @@ interface Message {
 }
 
 const suggestedPrompts = [
-  "What are you working on right now?",
-  "Tell me about your PM experience",
-  "What have you built?",
-  "How do you think about product?",
+  "Most impactful thing you've shipped?",
+  "Tell me about a 0→1 build",
+  "How do you use AI?",
+  "What role are you looking for?",
 ];
 
 export default function AskMePage() {
