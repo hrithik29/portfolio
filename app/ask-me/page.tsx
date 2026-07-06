@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactMarkdown from "react-markdown";
+import { gaEvent } from "@/app/lib/gtag";
 
 interface Message {
   role: "user" | "assistant";
@@ -34,6 +35,12 @@ export default function AskMePage() {
   const handleSend = async (messageText?: string) => {
     const userMessage = messageText || input.trim();
     if (!userMessage || loading) return;
+
+    gaEvent("ai_bot_message_sent", {
+      message_length: userMessage.length,
+      source: messageText ? "suggested_prompt" : "free_typed",
+      ...(messageText ? { prompt_text: messageText } : {}),
+    });
 
     setInput("");
     setChatMode(true);
