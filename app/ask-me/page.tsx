@@ -22,6 +22,7 @@ export default function AskMePage() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [chatMode, setChatMode] = useState(false);
+  const [sessionId] = useState(() => crypto.randomUUID());
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -51,7 +52,12 @@ export default function AskMePage() {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage }),
+        body: JSON.stringify({
+          message: userMessage,
+          sessionId,
+          history: messages,
+          source: messageText ? "suggested_prompt" : "free_typed",
+        }),
       });
 
       const data = await response.json();

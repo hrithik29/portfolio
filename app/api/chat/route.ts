@@ -2,9 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 import contextData from "@/data/hrithik_context.json";
 import { systemPrompt } from "@/ai/system-prompt";
 
+interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
+const AIRTABLE_CHAT_SESSIONS_TABLE_ID = "tbli7PUC14lpGCw9C";
+
 export async function POST(request: NextRequest) {
   try {
-    const { message } = await request.json();
+    const { message, sessionId, history = [] } = await request.json();
 
     if (!message || typeof message !== "string") {
       return NextResponse.json(
@@ -72,6 +79,46 @@ export async function POST(request: NextRequest) {
     const reply =
       data.choices?.[0]?.message?.content?.trim() ||
       "Sorry, I couldn’t generate a response right now.";
+
+    if (sessionId) {
+      try {
+        const transcript = [
+          ...(history as ChatMessage[]),
+          { role: "user", content: message },
+          { role: "assistant", content: reply },
+        ]
+          .map((m) => `${m.role === "user" ? "Q" : "A"}: ${m.content}`)
+          .join("\n\n");
+
+        await fetch(
+          `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/${AIRTABLE_CHAT_SESSIONS_TABLE_ID}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,
+            },
+            body: JSON.stringify({
+              performUpsert: { fieldsToMergeOn: ["Session ID"] },
+              records: [
+                {
+                  fields: {
+                    "Session ID": sessionId,
+                    Transcript: transcript,
+                    "Message Count":
+                      (history as ChatMessage[]).filter((m) => m.role === "user")
+                        .length + 1,
+                    "Last Message At": new Date().toISOString(),
+                  },
+                },
+              ],
+            }),
+          }
+        );
+      } catch (err) {
+        console.error("Airtable logging failed:", err);
+      }
+    }
 
     return NextResponse.json({ reply });
   } catch (error) {
